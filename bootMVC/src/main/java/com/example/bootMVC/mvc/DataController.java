@@ -17,4 +17,9 @@ public class DataController {
 	public String list(@RequestParam(value = "name", defaultValue = "World") String name) {
 	return String.format("Data List", name);
 	}
+	
+	@GetMapping("/dataList2")
+	public String list2(@RequestParam(value = "name", defaultValue = "World") String name) {
+	return String.format("Data List2", name);
+	}
 }
